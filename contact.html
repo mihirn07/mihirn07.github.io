@@ -49,36 +49,27 @@
 
 								<h3>Fill this up</h3>
 
-								<form method="post" action="#">
+								<form name="usebasin" id="usebasin" accept-charset="UTF-8" action="https://usebasin.com/f/35d01a4d9b9c" enctype="multipart/form-data" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											<input type="text" name="entry.797173265" id="entry.797173265" value="" placeholder="Name" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											<input type="email" name="entry.307831800" id="entry.307831800" value="" placeholder="Email" />
 										</div>
 										<!-- Break -->
 										<div class="col-12">
-											<select name="demo-category" id="demo-category">
+											<select name="entry.222814200" id="entry.222814200">
 												<option value="">- Message Type -</option>
 												<option value="1">Formal</option>
 												<option value="1">Casual</option>
 											</select>
 										</div>
 										<!-- Break -->
-
-										<!-- Break -->
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
-											<label for="demo-human">I am a human</label>
-										</div>
 										<!-- Break -->
 										<div class="col-12">
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											<textarea name="entry.838755446" id="entry.838755446" placeholder="Enter your message" rows="6"></textarea>
 										</div>
 										<!-- Break -->
 										<div class="col-12">
@@ -88,7 +79,17 @@
 											</ul>
 										</div>
 									</div>
-								</form>		
+								</form>	
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+								<script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script>
+								<script type="text/javascript">
+								$('#usebasin').on('submit', function(e) {
+								$('#usebasin *').fadeOut(2000);
+								$('#usebasin').prepend('Your message has been delivered :)');
+								});
+								</script>
 						</div>		
 
 
