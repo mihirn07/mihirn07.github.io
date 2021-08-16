@@ -165,6 +165,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+			color: #c30bf1 !important;
 		}
 
 	strong, b {
@@ -298,7 +299,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #18bfef !important;
+			color: #c30bf1 !important;
 		}
 
 	strong, b {
